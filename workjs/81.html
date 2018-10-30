@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<script type="text/javascript">
+	function showEm(){
+		with (document.customer){
+			var alpha = fname.value;
+			var beta = Iname.value;
+			var gamma = address.value;
+			var delta = city.value;
+			var epsilon = state.value;
+			}
+		var fullName = alpha +" " + beta+ "\n";
+		var livesHere = gamma + "\n" + delta+"," +epsilon;
+		alert(fullName+livesHere);
+		}
+  </script>
+  </head>
+
+<body>
+<form name = "customer">
+<input name="fname" type="text" value="First Name" />First Name
+<input name="Iname" type="text" value="Last Name" />Last Name
+<br />
+<input name="address" type="text" value="address" />Address
+<br />
+<input name="city" type="text" value="city" />City
+<br />
+<input name="state" type="text" value="state" />State
+<br />
+<input name="button" type="button" value="Click Hear" onClick="showEm()"/>
+
+</form>
+
+</body>
+</html>

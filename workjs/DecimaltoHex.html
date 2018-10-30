@@ -1,0 +1,28 @@
+<!doctype html>
+<meta charset="UTF-8">
+<html>
+<head>
+<title>DecimalToHex</title>
+</head>
+<body>
+<script>
+		function dec2hex(){
+		var accum = " ";
+		for (var i = 0; i<3; i++){
+		var dec = document.convert.elements[i].value;
+		var toNum = Math.floor(dec);
+		var toHex = toNum.toString(16);
+		if (toHex.length==1){
+		toHex = "0"+toHex;
+		}
+		accum+=toHex;
+		}
+		document.convert.hex.value=accum;
+		}
+</script>
+
+</body>
+
+
+
+</html>
