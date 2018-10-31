@@ -1,0 +1,129 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>JavaScript Fundamaentals</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	
+</head>
+<body>
+	<section>
+		<div class="content">
+			<div class="header">
+				<h2><script>document.write("Tutrial: JavaScript Fundamaentals");</script></h2>
+			</div>
+			<div class="maincontent">
+			<form name = "frm">
+			<table>
+				<caption>Calculator</caption>
+				<tr>
+					<td>Input Box:</td>
+					<td><input type= "text" name = "getvalue"/></td>
+				</tr>
+				<tr>
+					<td><input type= "button" value = "Absolute" onclick="calculat(1)"</td>
+					<td><input type= "button" value = "Round" onclick="calculat(2)" /></td>
+				</tr>
+				<tr>
+					<td><input type= "button" value = "Sine" onclick="calculat(3)"</td>
+					<td><input type= "button" value = "Cosine" onclick="calculat(4)" /></td>
+				</tr>
+				<tr>
+					<td><input type= "button" value = "Tangent" onclick="calculat(5)"</td>
+					<td><input type= "button" value = "Log" onclick="calculat(6)" /></td>
+				</tr>
+				<tr>
+					<td><input type= "button" value = "Floor" onclick="calculat(7)"</td>
+					<td><input type= "button" value = "Ceil" onclick="calculat(8)" /></td>
+				</tr>
+				<tr>
+					<td><input type= "button" value = "Squre Root" onclick="calculat(9)"</td>
+					<td><input type= "button" value = "Random" onclick="calculat(10)" /></td>
+				</tr>
+				<tr>
+					<td><input type= "button" value = "Max" onclick="calculat(11)"</td>
+					<td><input type= "button" value = "Min" onclick="calculat(12)" /></td>
+				</tr>
+				<tr>
+					<td><input type= "button" value = "E" onclick="calculat(13)"</td>
+					<td><input type= "button" value = "Pi" onclick="calculat(14)" /></td>
+				</tr>
+				<tr>
+					<td>Output Box:</td>
+					<td><input type= "text" name = "Result"/></td>
+				</tr>
+			
+			</table>
+		
+		</form>
+		<script>
+		function calculat(process){
+			with(document.frm)
+			switch(process){
+				case 1:
+				Result.value = Math.abs(getvalue.value);
+				break;
+				
+				case 2:
+				Result.value = Math.round(getvalue.value);
+				break;
+				
+				case 3:
+				Result.value = Math.sin(convDegree(getvalue.value));
+				break;
+				case 4:
+				Result.value = Math.cos(convDegree(getvalue.value));
+				break;
+				case 5:
+				Result.value = Math.tan(convDegree(getvalue.value));
+				break;
+				case 6:
+				Result.value = Math.log(getvalue.value);
+				break;
+				case 7:
+				Result.value = Math.floor(getvalue.value);
+				break;
+				case 8:
+				Result.value = Math.ceil(getvalue.value);
+				break;
+				case 9:
+				Result.value = Math.sqrt(getvalue.value);
+				break;
+				case 10:
+				Result.value = Math.random();
+				break;
+				case 11:
+				alert(Math.max(getvalue.value, prompt("Enter number","0"))+ "is geater the number");
+				break;
+				case 12:
+				alert(Math.min(getvalue.value, prompt("Enter number","0"))+ "is smaller the number");
+				break;
+				case 13:
+				Result.value = Math.E;
+				break;
+				case 14:
+				Result.value = Math.Pi;
+				break;
+			}
+		
+		
+		}
+		function convDegree(x){
+			return x*22/7/180;
+		}
+		
+		</script>
+			
+				
+				
+				
+			</div>
+			
+			
+			<div class="footer">
+				<h2><script>document.write("Traning With Live Project");</script></h2>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!Doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>JavaScript Fundamaentals</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+	<section>
+		<div class="content">
+			<div class="header">
+				<h2><script>document.write("Tutrial: JavaScript Fundamaentals");</script></h2>
+			</div>
+			<div class="maincontent">
+			<div>
+				<span id ="hour"></span>:
+				<span id ="minute"></span>:
+				<span id ="second"></span>
+			</div>
+			
+				<script>
+				function clock(){
+				var date = new Date();
+				
+				var hour = date.getHours();
+				var minute = date.getMinutes();
+				var second = date.getSeconds();
+				
+				document.getElementById("hour").innerHTML = hour;
+				document.getElementById("minute").innerHTML = minute;
+				document.getElementById("second").innerHTML =second;
+				}
+				
+				setInterval(clock, 1000);
+				
+				</script>
+				
+				
+			</div>
+			
+			
+			<div class="footer">
+				<h2><script>document.write("Traning With Live Project");</script></h2>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

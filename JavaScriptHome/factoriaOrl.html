@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+</head>
+
+<body>
+	<p id="demo"></p>
+	<script>
+		//5! = 5*4*3*2*1
+		var num = prompt (" to me ");
+		function factorial(n){
+			if (n == 0){
+				return 1;
+			}else{
+				
+				return n*factorial(n-1);
+			}
+		
+		}
+		document.write(factorial(num));
+	</script>
+</body>
+</html>
