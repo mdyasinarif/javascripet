@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+
+</style>
+</head>
+<script>
+	function doIt(){
+		window.document.petstore.puppy.value= "Swissy";
+		window.document.petstore.clicker.value="I\'ve been clicked";
+		}
+    </script>
+<body bgcolor="#CCCCCC"
+onLoad = "javascript:window.document.petstore.reset()">
+<h2>Object Hierarcht Practic</h2>
+<span class="clickNote">&nbsp; Click the button&nbsp;</span>
+<form name="petstore">
+<input name="puppy" type="text" />
+<input name="clicker" type="button" value="Click to change value of text Window" onClick="doIt()"/>
+
+</form>
+</body>
+</html>

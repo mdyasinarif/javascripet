@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+  var sum = 0;
+  var sn = prompt("1st number","");
+  var en = prompt("2nd number","");
+  function makeSum(sn,en){
+    while(sn>=en){
+      sum+=sn;
+      sn--;
+    }
+    return sum;
+  }
+  alert(makeSum(sn,en));
+  </script>
+
+</body>
+</html>

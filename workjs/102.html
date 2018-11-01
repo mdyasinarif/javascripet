@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+
+</style>
+</head>
+<script>
+	var acme = new Object();
+	acme.management = "Management coordinates everthing";
+	acme.management = new Object();
+	acme.management.rand = "Research and Devlopment work to devlop ne and better product and services";
+	acme.finance = "Fincial keeps track of the money";
+	acme.production = "Production the marketing staff";
+	acme.marketing = "Marketing develops stratedies to target markets for the production";
+	acme.marketing = new Object();
+	acme.marketing.sales = " Sales contens potaintial Clients and Sells the production";
+	acme.fullfillment = "Fullfillment delives sold products";
+	var display = "<h2>First the properties of the acme object </h2>";
+	
+	for (var counter in acme){
+		display += counter+"<br>";
+		}
+	display+= "<h3>And now the values of the propaerties of management and marketion</h3>";
+	display+= acme.management.rand+"<br>";
+	display+= acme.marketing.sales;
+	document.write(display);
+</script>
+<body bgcolor="#CCCCCC">
+
+</body>
+</html>
