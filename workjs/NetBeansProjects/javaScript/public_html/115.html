@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Scroll</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .jLeft{
+                font-size: 60pt;
+                font-family: verdana;
+                color: black;
+                font-weight: bold;
+            }
+            a{
+                color: #CC2801;
+            }
+            .jRight{
+                font-size: 60pt;
+                font-family: verdana;
+                color: #006666;
+                font-weight: bold;
+            }
+            
+        </style>
+        <script>
+            function goRight() {
+                scroll(600,50);
+            }
+            function goLeft() {
+                scrollBy(-120,0);
+            }        
+        </script>
+    </head>
+    <body bgcolor = #fff; >
+        <table border ="0" cellspacing="0" bgcolor="black" width="1200" height="500">
+            <tr>
+                <td align="center" valign="middl" bgcolor="#f2f2f">
+                    <span class="jLeft"></span>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>

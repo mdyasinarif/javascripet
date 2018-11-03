@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            label{
+                color: red;
+                padding: 3px 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Form Validation</h1>
+        <form name="myForm">
+            Name:<br/><input type="text" name="fname"/><label id="fname"></label><br/>
+            E-mail:<br/><input type="text" name="email"/><label id="email"></label><br/>
+            Gender:<br/>
+				<input type="radio" name="gender"value="Male"/>Male
+				<input type="radio" name="gender"value="FeMale"/>FeMale
+			
+				<label id="gender"></label><br/>
+            Education:<br/>
+				<input type="checkbox" name="ssc" value= "ssc"/>SSC
+				<input type="checkbox" name="hsc" value= "hsc"/>HSC
+				
+				<label id="education"></label><br/>
+				
+            Round:<br/>
+				<select name="round">
+					<option>Secect A Round</option>
+					<option>Round 38</option>
+					<option>Round 39</option>
+					<option>Round 40</option>
+				</select>
+			
+				<label id="round"></label><br/>
+            Comment:<br/><textarea name= "comment"></textarea><label id="comment"></label><br/>
+        </form>
+			<button onClick= "vfrom()" >Submit</button>
+			<button onClick= "closeWindow()" >Close Window</button>
+
+        
+        <script>
+            var win;
+			function closeWindow(){
+				win.close();
+			}
+			function vfrom(){
+				var fname = document.myForm.fname.value;
+				var email = document.myForm.email.value;
+				var gender = document.myForm.gender.value;
+				var education = "";
+					if (document.myForm.ssc.checked){
+						education+= document.myForm.ssc.value;
+					}
+					if (document.myForm.hsc.checked){
+						education+= document.myForm.hsc.value;
+					}
+				var round = document.myForm.round.value;
+				var comment = document.myForm.comment.value;
+				// val Name
+				 if (fname.length<3){
+					document.getElementById("fname").innerHTML = "Name Length at least 3 Characters";
+					return false;
+				}else{
+					document.getElementById("fname").innerHTML = " ";
+					}
+				// val email
+				// val gender
+					if (gender == ""){
+						document.getElementById("gender").innerHTML = "Gender must be checked out";
+						}else{
+						document.getElementById("gender").innerHTML = "";
+						}
+				// val education
+					if (!document.myForm.ssc.checked && !document.myForm.hsc.checked){
+						document.getElementById("education").innerHTML = "Education must be checked out";
+						}else{
+						document.getElementById("education").innerHTML = "";
+						}
+				// val round
+					if (round == "Secect A Round"){
+						document.getElementById("round").innerHTML = "Round must be Secect";
+						}else{
+						document.getElementById("round").innerHTML = "";
+						}
+				// val comment
+					if (comment.length<10){
+					document.getElementById("comment").innerHTML = "Comment Length at least 3 Characterst ";
+					return false;
+					}else{
+						document.getElementById("comment").innerHTML = "";
+						
+						// open window
+					win = window.open("", "", "width=400");
+					win.document.write("<h2><center>Your Information is Heare</center></h2>");
+					
+					win.document.write("Name:"+name+"<br/>");
+					win.document.write("Email:"+email+"<br/>");
+					win.document.write("Gender:"+gender+"<br/>");
+					win.document.write("Education:"+education+"<br/>");
+					win.document.write("Round:"+round+"<br/>");
+					win.document.write("Comment:"+comment+"<br/>");
+					}
+			}
+        </script>
+    </body>
+</html>
