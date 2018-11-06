@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date</title>
+        <meta charset="UTF-8">
+<body>
+
+<button onClick="displayDate()"> NOW Time </button>
+<button onChange="displayDate()"> NOW Time </button>
+<button onmouseover="displayDate()"> NOW Time </button>
+<button onmouseout="displayDate()"> NOW Time </button>
+<button onkeydown="displayDate()"> NOW Time </button>
+<button onload="displayDate()"> NOW Time </button>
+
+
+<script>
+	function displayDate(){
+		document.getElementById("demo").innerHTML= Date();
+		document.getElementById("demo2").innerHTML= Date();
+		document.getElementById("demo3").innerHTML= Date();
+		document.getElementById("demo4").innerHTML= Date();
+		document.getElementById("demo5").innerHTML= Date();
+		document.getElementById("demo6").innerHTML= Date();
+	}
+</script>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+</body>
+</html>
