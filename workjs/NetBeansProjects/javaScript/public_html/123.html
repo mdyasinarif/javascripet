@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    </head>
+    <body>
+         <script>
+            var matchThis="Play is again Sam ";
+            var stringer1 = matchThis.match(/sam/i);
+            var replaceThis = "The script is embedde in Java";
+            var stringer2 = replaceThis.replace(/Java/g,"HTML");
+            //string.search()
+            var searchThis="www.sandlight.com ";
+            var stringer3=searchThis.slice(searchThis.search(/.com/));
+            //string.split()
+            var splitThis = "She has two importent issues ";
+            var stringer4=splitThis.split(/two importent/i);
+            var display = "<h3>Regular Expression Methods in String object</h3>";
+            display+=matchThis+"becomes:"+stringer1+"<br>";
+            display+=replaceThis+"becomes:"+stringer2+"<br>";
+            display+=searchThis+"becomes,with the help of string.slice():"+stringer3+"<br>";
+            display+=splitThis+"becomes an array:"+stringer4[0]+" "+stringer4[1]+"<br>";
+            var showOff= new String(display);
+            document.write(showOff);
+        </script>
+    </body>
+</html>

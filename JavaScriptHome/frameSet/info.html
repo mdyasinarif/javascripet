@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Data</title>
+        <script>
+            function reply(){
+                var hi = new String();
+                hi = parent.frames[0].name;
+                parent.header.document.forms[0].elements[0].value="Hello";
+                hi.toUpperCase()+"!";
+                var menName=parent.frames[1].name;
+                document.forms[0].elements[1].value=menName;
+            }
+        </script>
+    </head>
+    <body bgColor="#b0526">
+        <form><h4>
+                <input type="text">One<br>
+                <input type="text">Two<br>
+                <input type="text">Three<br>
+         <input type="button" value="Change Somethings"onClick="reply()">
+        </form>
+    </body>
+</html>

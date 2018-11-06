@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+	function primeNumber(num){
+		var n=Math.sqrt(num);
+		for(i=2; i<=num;i++)
+		if(num%i===0)
+		return false;
+		return true;
+		}
+	function checkPrime(sn,en){
+		var sum =0;
+		for(sn;sn<=en;sn++){
+			if(primeNumber(sn)){
+				sum++}
+			}
+			return sum;
+		}
+		document.write("sum from prime number from 1 to 100:" +checkPrime(1,100));
+		function printCountFromOrines(sn;en){
+			var count = 0;
+			for(sn;sn<en;sn++){
+				if(primeNumber(sn)){
+					count++;
+					
+					}
+				
+				}
+			return count;
+			}
+		document.write("Count from number from 1 to 100:"+printCountFromOrines(1,100) );
+</script>
+</body>
+</html>

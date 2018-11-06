@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Replace</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            
+        </style>
+    </head>
+    <body>
+	<button onClick = "myFunction()">Replace</button>
+	<p id = "demo">Please visit microsoft is the microsoft ifdsif microsoft!<br>
+	Please visit microsoft is the microsoft ifdsif microsoft!
+	</p>
+        <script>
+           function myFunction(){
+			var str = document.getElementById("demo").innerHTML;
+			var txt = str.replace(/Microsoft/ig,"W3School");
+			document.getElementById("demo").innerHTML=txt ;
+		   }
+			
+			
+        </script>
+    </body>
+</html>

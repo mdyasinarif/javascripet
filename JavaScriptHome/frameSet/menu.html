@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>menu</title>
+        <script>
+            function chengeThem(){
+                parent.data.document.forms[0].elements[2].value="Hi from menue";
+                parent.header.document.forms[0].elements[1].value="Hello";
+            }
+        </script>
+    </head>
+    <body bgColor="#a0526">
+        <form>
+            <input type="button" value="Send Two!"onClick="chengeThem()">
+        </form>
+    </body>
+</html>
