@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>putBird</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function putBird(){
+                var state = "New mexico";
+                document.stateBird.state.value=state
+                var bird = "Roadrunner";
+                document.stateBird.bird.value = bird
+                
+            }
+        </script>
+    </head>
+    <body>
+        
+        <form name="stateBird">
+            <input name="state" type="text">: State Name<br>
+            <input name="bird" type="text">: name of state Birds<p>
+                <input type="button" value="Bird Button" onClick="putBird()">
+        </form>
+    </body>
+</html>

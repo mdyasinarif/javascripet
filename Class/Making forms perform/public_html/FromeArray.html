@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Frome Array</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function sebdEm(){
+                var newDisplay= "";
+                var myForm = document.enter.length;
+                for(var counter = 0;counter<myForm;counter++){
+                    newDisplay+= document.forms[0].elements[counter].value+"\n";
+                }
+                document.forms[1].elements[1].value = newDisplay;
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Enter the information</h3>
+        <form name="enter">
+            <table>
+                <tr>
+                    <td><input name="fname" type="text">
+                        <span class="inBox">&nbsp;&nbsp;First Name</span>
+                    </td>
+                    <td><input name="lname" type="text">
+                        <span class="inBox">&nbsp;&nbsp;Last Name</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input name="address" type="text">
+                        <span class="inBox">&nbsp;&nbsp;Address</span>
+                    </td>
+                    <td><input name="city" type="text">
+                        <span class="inBox">&nbsp;&nbsp;City</span>
+                    </td>
+                    <td><input name="state" type="text">
+                        <span class="inBox">&nbsp;&nbsp;State</span>
+                    </td>
+                    <td><input name="zip" type="text">
+                        <span class="inBox">&nbsp;&nbsp;Zip</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input name="email" type="text">
+                        <span class="inBox">&nbsp;&nbsp;E-mail</span>
+                    </td>
+                </tr>
+            </table> 
+        </form>
+        <form name="transfer">
+            <input type ="button" value="Transfer Array" onclick="sebdEm()"><p>
+                <textarea></textarea>
+        </form>
+    </body>
+</html>

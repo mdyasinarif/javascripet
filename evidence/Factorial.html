@@ -6,18 +6,14 @@
 </head>
 
 <body>
-<p id = "demo"></p>
+
 <script>
-	var num = parseInt (prompt("Enter a positive number",""));    
-    function factorial(num){
-		if(num == 0|| num == 1){
-			return 1;
-			}else{
-				return factorial(num-1)*num;
-				}
-		
-		}
-		document.getElementById("demo").innerHTML = "Factorial of the "+num+" is :"+factorial(num);
+	var n = parseInt (prompt("Enter a positive number",""));    
+    var multi = 1;
+	for(n;n>=1;n--){
+		muti*=n
+	}
+	document.write(muti);
     
     </script>
 </body>

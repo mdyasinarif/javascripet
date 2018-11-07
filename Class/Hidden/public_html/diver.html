@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>diver</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function goleft(){
+                var left = parent.info.document.position.hereL.value;
+                parent.info.location= left;
+            }
+            function goRight(){
+                var right = parent.info.document.position.hereR.value;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="fontDriver">Chick one button below</div>
+        <p>
+        <form name="direction">
+            <input type="button" value="<=Left" onClick="goleft()">
+            <input type="button" value="Right=>" onClick="goRight">
+        </form>
+    </body>
+</html>
