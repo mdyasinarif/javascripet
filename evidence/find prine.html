@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>find prime</title>
+</head>
+
+<body>
+<script>
+//find print prime numbers if needed...........................
+function CheckPrime(num){
+		for(i=2; i<num;i++){
+			if(num % i ===0)
+				return false;
+				return num!=1 && num!= 0;
+			}
+		}
+		
+		var snf = parseInt(prompt("Enter strating Number",""));
+		var enf = parseInt(prompt("Enter Ending Number",""));;
+		
+			function findPrime(snf,enf){
+				for(snf;snf<=enf;sfn++){
+					if(CheckPrime(snf)){
+						document.write(snf+"is a prime number"+"<br>");
+						}else{
+							document.write(snf+"is not a prime number"+"<br>");
+							}
+					}
+				}
+				findPrime(snf,enf);
+</script>
+</body>
+</html>
