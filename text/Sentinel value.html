@@ -2,17 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>fA</title>
+<title>Sentinel value</title>
 </head>
 
 <body>
 <script>
-var n = parseInt(prompt("Enter number",""));
-var fact = 1;
-for(n;n>=1;n--){
-	fact*=n
+var n;
+var sum = 0;
+while(n !=-1){
+	n = parseInt(prompt("Enter number",""));
+	if(n !=-1){
+		sum+=n
+		}
 	}
-	document.write(fact);
+	alert(sum);
+
 </script>
 </body>
 </html>

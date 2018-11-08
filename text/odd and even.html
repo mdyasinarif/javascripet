@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>odd and even</title>
+</head>
+
+<body>
+<script>
+var sn = parseInt(prompt("Enter strating number",""));
+var en = parseInt(prompt("Enter ending number",""));
+if(sn>en){
+	document.write("Your number larger then the final number");
+	}else if(sn==en){
+		document.write("Your number equle to the final number");
+		}else if (sn ==0 || en== 0){
+			document.write("Your number must me geter then 0");
+			}else{
+				document.write(" All even numbers:<br>");
+				for(var i=sn; i<=en;i++){
+					if(i%2==0){
+					document.write(i+"<br>");
+					}
+				}
+				document.write("All odd numbers:<br>");
+				for(var i=sn; i<=en;i++){
+					if(i%2!=0){
+					document.write(i+"<br>");
+					}
+				}
+				}
+
+
+</script>
+</body>
+</html>

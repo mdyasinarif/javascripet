@@ -2,17 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>fA</title>
+<title>fibo Document</title>
 </head>
 
 <body>
 <script>
-var n = parseInt(prompt("Enter number",""));
-var fact = 1;
-for(n;n>=1;n--){
-	fact*=n
+var n = parseInt(prompt("Enter strating number",""));
+var a,b,result;
+a=0;
+b=1;
+result=b;
+for(i=0;i<n;i++){
+	document.write(result+"<br>");
+	result = a+b;
+	a=b;
+	b=result;
 	}
-	document.write(fact);
+
+
 </script>
 </body>
 </html>
