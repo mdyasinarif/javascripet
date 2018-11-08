@@ -50,14 +50,14 @@
 			Password:<br>
 				<input type="password" name="pass1">
 				<label id = "pass1"></label><br>
-			Confarm Password:<br>
+			Confarim Password:<br>
 				<input type="password" name="pass2">
 				<label id = "pass2"></label><br>
 				<label id = "matches"></label><br>
 			Comment:<br><textarea name="comment"></textarea>
 				<label id = "comment"></label><br>
 		
-			<button type= reset>Reset</button>
+			<button type= "reset">Reset</button>
 			
 		</form>
 			<button onClick="vform()">Submit</button>
@@ -77,6 +77,7 @@
 				var education = "";
 					if(document.myForm.SSC.checked){
 						education += document.myForm.SSC.value;
+						
 					}
 					if(document.myForm.HSC.checked){
 						education += document.myForm.HSC.value;
@@ -109,7 +110,7 @@
 					document.getElementById("email").innerHTML = "Email field must not be empty!!!";
 					return false;
 				}else{
-					var emailval =/[a-zA-Z0-9][a-zA-Z0-9_.]*[@][a-zA-Z0-9]+([.][a-zA-Z0-9]+)+/;
+					var emailval =/[a-zA-Z0-9][a-zA-Z0-9_.]*[@][gmail-yahoo]+([.][com])+/;
 					if(!emailval.test(email)){
 					document.getElementById("email").innerHTML = "Enter valid email!!!";
 					return false;
