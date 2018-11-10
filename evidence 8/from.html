@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>from</title>
+<style type="text/css">
+            label{
+				color: red;
+				padding: 5px; 10px;
+			}
+			.mainDiv{
+				margin-left:100px;
+				margin-top:50px;
+			}
+			
+        </style>
+</head>
+
+<body>
+<div class="mainDiv">
+<form name="myForm">
+	Name : <br />
+    	<input type="text" name="fname" />
+        <label id ="fname"></label><br />
+    Email : <br />
+    	<input type="text" name="email" />
+        <label id ="email"></label><br />
+     Round : <br />
+    	<select name="round">
+        <option>Select A Round</option>
+        <option> Round 37</option>
+        <option> Round 38</option>
+        <option> Round 39</option>
+        </select>
+        <label id ="round"></label><br />
+       Message : <br />
+    	<textarea name="message"></textarea>
+        <label id ="message"></label><br />
+
+</form>
+	<button type="Submit"  onclick="vlform()">Sunmit</button>
+    <button  onclick="closeWindow()">Close Window</button>
+    <script>
+    	var win;
+		
+		var fname = document.myForm.fname.value;
+		var email = document.myForm.email.value;
+		var round = document.myForm.round.value;
+		var message = document.myForm.message.value;
+    //val name
+	function vlform(){
+		if(fname.length<3){
+			document.getElementById("fname").innerHTML = "Name must be 3 Character";
+			return false;
+		}else{
+				document.getElementById("fname").innerHTML = "";
+				}
+	// email
+		if(email == ""){
+			document.getElementById("email").innerHTML = "Email must be field"
+			return false;
+			}else{
+				var emailval =/[a-zA-Z0-9][a-zA-Z0-9_.]*[@][gmail-yahoo]+([.][com])+/;
+				if(!emailval.test(email)){
+					document.getElementById("email").innerHTML = "Email is invalid";
+					return false;
+					}else{
+						document.getElementById("email").innerHTML = "";
+						}
+				}
+				
+				// round
+				if(round=="Select A Round"){
+					document.getElementById("round").innerHTML = "Round must be selected"
+					return false;
+					}else{
+						document.getElementById("round").innerHTML = "";
+						}
+				// message
+				if(message.length<10){
+			document.getElementById("message").innerHTML = "Message must be 10 Character"
+			return false;
+			}else{
+				document.getElementById("message").innerHTML = "";
+				
+				// open window
+				
+				win = window.open("","","with:400");	
+				win.document.write("<h2><center>Your Information is Here</center></h2>")	
+				win.document.write("Name : "+fname+"<br>");
+				win.document.write("Email : "+email+"<br>");
+				win.document.write("Round : "+round+"<br>");
+				win.document.write("Message : "+message+"<br>");
+				
+				}
+				}
+    </script>
+
+</div>
+
+</body>
+</html>
