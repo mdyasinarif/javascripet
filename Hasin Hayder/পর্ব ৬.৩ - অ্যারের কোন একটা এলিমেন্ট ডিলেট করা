@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+  var week= ["A","B","C","D","E","F"];
+  var chanckFirst = week.slice(1,4);
+  document.write(week+"<br />"+"slice Positive  :"+chanckFirst);
+  document.write("<br />");
+  var chanckLast = week.slice(-4,-1);
+  document.write("slice Nagative  :"+chanckLast);
+    document.write("<br />");
+  var chanckPos = week.splice(2,3);
+  document.write("splice Positive  :"+chanckPos);
+  document.write("<br />");
+var chanckNeg = week.splice(-2,3);
+document.write("splice Nagative  :"+chanckNeg);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+var a = "My Name is Yasin Arif"
+
+var s = a.split(" ");
+document.write("Split  :"+s);
+document.write("<br />");
+
+var as = s.join("*");
+document.write("Join  :"+as);
+document.write("<br />");
+document.write("I am a boy".split(" ").join("*"));
+document.write("<br />");
+
+var rev = a.split("").reverse("").join("");
+document.write(rev);
+
+</script>
+</body>
+</html>

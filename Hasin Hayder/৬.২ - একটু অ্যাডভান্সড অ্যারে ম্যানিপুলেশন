@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+  var myList = ["apple","banna","oriange"];
+  document.write("Main  :");
+  document.write(myList);
+  document.write("<br />");
+  document.write("Push  :");
+  myList.push("gave");
+  document.write(myList);
+  myList.unshift("kola");
+  document.write("<br />");
+  document.write("unshift  :");
+  document.write(myList);
+  myList.pop();
+  document.write("<br />");
+  document.write("pop  :");
+  document.write(myList);
+  document.write("<br />");
+  document.write(lastelement);
+  myList.shift();
+  document.write("<br />");
+  document.write("shift  :");
+  document.write(myList);
+  document.write("<br />");
+  document.write(myList.length);
+</script>
+</body>
+</html>

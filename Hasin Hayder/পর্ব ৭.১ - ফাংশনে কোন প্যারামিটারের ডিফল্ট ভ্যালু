@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+/*function myfunction(name ="",age=""){
+  if(name){
+    document.write("Hello"+name+" you are "+age+" Years old "+"<br />");
+}
+}
+myfunction("Yasin",20);
+myfunction(" Arif",22);*/
+
+function revisedString(data){
+  var  revisedString = data.split("").reverse("").join("");
+  return revisedString;
+}
+var sentence = "I am Yasin";
+document.write(sentence);
+document.write("<br />");
+
+var revisedSentence = revisedString(sentence);
+document.write(revisedSentence);// function pass kora varibale call kor ta hoba
+document.write("<br />");
+
+var sentence2 = "I am Arif";
+document.write(sentence2);
+document.write("<br />");
+
+var revisedSentence2 = revisedString(sentence2);
+document.write(revisedSentence2);
+
+</script>
+</body>
+</html>
