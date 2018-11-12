@@ -8,27 +8,22 @@
 <body>
 <script>
 //find print prime numbers if needed...........................
-function CheckPrime(num){
-		for(i=2; i<num;i++){
-			if(num % i ===0)
-				return false;
-				return num!=1 && num!= 0;
-			}
-		}
-		
-		var snf = parseInt(prompt("Enter strating Number",""));
-		var enf = parseInt(prompt("Enter Ending Number",""));;
-		
-			function findPrime(snf,enf){
-				for(snf;snf<=enf;sfn++){
-					if(CheckPrime(snf)){
-						document.write(snf+"is a prime number"+"<br>");
-						}else{
-							document.write(snf+"is not a prime number"+"<br>");
-							}
-					}
-				}
-				findPrime(snf,enf);
+function isPrime(num){
+	var n = Math.sqrt(num);
+	for(i=2;i<=n;i++){
+	if(num%i ==0)
+	return false;
+	}
+	return true;
+}
+
+var number = prompt("Enter");
+if(isPrime(number)){
+	document.write(number+"is prime");
+}else{
+	document.write(number+"is not prime");
+}
+
 </script>
 </body>
 </html>

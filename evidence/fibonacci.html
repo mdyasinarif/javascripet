@@ -8,18 +8,17 @@
 <body>
 <script>
 
-var n = parseInt(prompt("Enter",""));
-var a,b,result;
-a=0;
-b=1;
-result=b;
-for(i=1;i<=n;i++){
-	document.write(result+"<br>");
-	result = a+b;
-	a=b;
-	b=result;
-	}
-
+var n = 0;
+var x = 0;
+var y = 1;
+var feb = "0 1 ";
+for(i=1;i<10;i++){
+	n = x +y;
+	x = y;
+	y = n;
+	feb+= n + " ";
+}
+document.write(feb);
 </script>
 </body>
 </html>

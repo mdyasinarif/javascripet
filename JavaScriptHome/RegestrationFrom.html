@@ -65,10 +65,7 @@
 			
         
         <script>
-			var win;
-			function closeWindow(){
-				win.close();
-			}
+		
 			function vform(){
 				var fname  = document.myForm.fname.value;
 				var lname  = document.myForm.lname.value;
@@ -163,7 +160,12 @@
 					document.getElementById("comment").innerHTML = "Comment Length at least 10 Characters";
 					return false;
 				}else{
-					document.getElementById("comment").innerHTML = "";
+						document.getElementById("comment").innerHTML = "";
+						var win;
+						function closeWindow(){
+						win.close();
+							}
+					
 					// open window
 					win = window.open(" ", " ", "width=400");
 					win.document.write("<h2><center>Your Information is Heare</center></h2>");
