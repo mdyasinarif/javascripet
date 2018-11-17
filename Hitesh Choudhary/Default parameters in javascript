@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Default parameters in javascript</title>
+</head>
+
+<body>
+<script>
+let sayHello = function(name){
+    document.write("Greeting massage for user");
+    document.write(` hye  ${name}`);
+
+}
+
+sayHello('Yasin');
+
+let fullNameMaker = function(firstName,LastName){
+      document.write('<br>');
+      document.write('Wealcome');
+      document.write(` happy to have you ${firstName},${LastName}`);
+      document.write('<br>');
+
+}
+fullNameMaker('Yasin','Arif')
+
+let myAdder = function(num1,num2){
+  return  num1+num2;
+}
+document.write(myAdder(5,4));
+
+document.write('<br>');
+let multi=function(num3,num4){
+  return num3*num4
+}
+document.write(multi(5,4));
+document.write('<br>');
+
+
+let myMark = function(name='unName',mark=0){
+  return 'Hi '+name+' Your Obtain Marks is : '+mark;
+
+}
+document.write(myMark('yasin',80));
+
+
+</script>
+</body>
+</html>

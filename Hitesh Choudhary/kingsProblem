@@ -2,20 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>factorial</title>
+<title>kingsProblem</title>
 </head>
 
 <body>
 <script>
-function myfact(){
-	var n = parseInt(prompt("Enter a number"));
-	fact = 1;
-	for(i=1;i<=n;i++){
-	fact*=i;
-	}
-	alert(fact);
-}
-myfact();
+ let king = 'yain'
+ if(true){
+	 let king = 'arif'
+
+	 if(true){
+		 king = 'sohan'
+		 document.write(king);
+	 }
+ }
+ if(true){
+	 	document.write('This is parent king :'+king);
+ }
 </script>
 </body>
 </html>

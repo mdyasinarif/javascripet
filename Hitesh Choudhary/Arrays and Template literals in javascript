@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Arrays and Template literals in javascript</title>
+</head>
+
+<body>
+<script>
+let myName = ['Yasin','Arif','Sohan']
+	 	document.write(myName[0]);
+		document.write('<br>');
+		document.write(myName[myName.length-1]);
+		document.write('<br>');
+		document.write(`I have ${myName.length} Name`);// back semeclon tab ar upporar button
+		document.write('<br>');
+	document.write(`I have ${10*20} Tk`);
+</script>
+</body>
+</html>

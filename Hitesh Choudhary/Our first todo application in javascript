@@ -2,20 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>factorial</title>
+<title>Default parameters in javascript</title>
 </head>
 
 <body>
 <script>
-function myfact(){
-	var n = parseInt(prompt("Enter a number"));
-	fact = 1;
-	for(i=1;i<=n;i++){
-	fact*=i;
-	}
-	alert(fact);
-}
-myfact();
+ const myTodos = []
+
+ myTodos.push('Hi Yasin')
+ myTodos.push('How are You')
+ myTodos.push('I am tence')
+
+ myTodos.forEach(function(todo,i){
+     document.write(`my tast no . ${i+1} is : ${todo}`)
+ })
+
+
+
 </script>
 </body>
 </html>

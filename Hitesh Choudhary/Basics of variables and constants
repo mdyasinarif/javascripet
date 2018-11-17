@@ -2,20 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>factorial</title>
+<title>Var and let keyword</title>
 </head>
 
 <body>
 <script>
-function myfact(){
-	var n = parseInt(prompt("Enter a number"));
-	fact = 1;
-	for(i=1;i<=n;i++){
-	fact*=i;
-	}
-	alert(fact);
-}
-myfact();
+	const firstName = 'yain'
+	firstName = 'Arif'
+	document.write(firstName+firstName);
+// np change is here
 </script>
 </body>
 </html>
