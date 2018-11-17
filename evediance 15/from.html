@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>from</title>
+<style>
+	.mainDiv{
+		margin-left:100px;
+		margin-top:50px;
+		}
+		label{
+			color:red;
+			padding:5px;3px;
+			}
+</style>
+</head>
+
+<body>
+
+<div class="mainDiv">
+	<form name="myfrom">
+    	ID: <br/>
+        <input type="text" name="ID"/> 
+        <label id="ID"></label><br/>
+        Name: <br/>
+        <input type="text" name="fname"/> 
+        <label id="fname"></label><br/>
+        Email: <br/>
+        <input type="text" name="Email"/> 
+        <label id="Email"></label><br/>
+        Gender: <br/>
+        <input type="radio" name="Gender" value="Male"/> Male
+        <input type="radio" name="Gender" value="FeMale"/> FeMale
+        <label id="Gender"></label><br/>
+        Round: <br/>
+        <select name="Round">
+        	<option>Select A Round</option>
+            <option> Round 38</option>
+            <option>Round 39</option>
+        </select>
+        <label id="Round"></label><br/>
+        <button type="reset" >Reset</button>
+    </form>
+		<button onclick="vfrom()" type="submit">Display</button>
+</div>
+
+<script>
+	var win;
+	function vfrom(){
+		var ID = document.myfrom.ID.value;
+		var fname = document.myfrom.fname.value;
+		var Email = document.myfrom.Email.value;
+		var Gender = document.myfrom.Gender.value;
+		var Round = document.myfrom.Round.value;
+		
+		// valitadtion
+		if(ID.length<6){
+			document.getElementById("ID").innerHTML = "ID must be at lest 6 character";
+			return false;
+			}else{
+				document.getElementById("ID").innerHTML = "";
+				}
+				
+		if(fname.length<3){
+			document.getElementById("fname").innerHTML = "name must be at lest 3 character";
+			return false;
+			}else{
+				document.getElementById("fname").innerHTML = "";
+				}
+		if(Email == ""){
+			document.getElementById("Email").innerHTML = "Email must be file";
+			return false;
+			}else{
+				var emailplot = /[a-zA-Z0-9][a-zA-Z0-9.-]*[*][a-zA-Z]+([.][a-zA-Z]+)+/
+				if(emailplot.test(Email)){
+					document.getElementById("Email").innerHTML = "Enter valid Email";
+					return false;
+					}
+					document.getElementById("Email").innerHTML = "";
+				}
+		if(Gender==""){
+			document.getElementById("Gender").innerHTML = "Gender Must me checked"
+			return false;
+			}else{
+				document.getElementById("Gender").innerHTML = "";
+				}
+		if(Round == "Select A Round"){
+			document.getElementById("Round").innerHTML = "Round Must meselect"
+			return false;
+			}else{
+				document.getElementById("Round").innerHTML = "";
+				
+				win  = window.open("","","width=400");
+				win.document.write("Your information is here"+"<hr>");
+				
+				win.document.write("ID :"+fname+"<br>");
+				win.document.write("Name :"+ID+"<br>");
+				win.document.write("Email :"+Email+"<br>");
+				win.document.write("Gender :"+Gender+"<br>");
+				win.document.write("Round :"+Round+"<br>");
+				}
+			
+		}
+</script>
+</body>
+</html>
