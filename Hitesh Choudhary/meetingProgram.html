@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+let myTodos = {
+	day:'MonDay',
+	meetings : 0,
+	meetDone : 0,
+	
+	addMeeting: function(num){
+		this.meetings = this.meetings + num
+	},
+	doneMeeting: function(num){
+		this.meetDone = this.meetDone + num
+	},
+	summary:function(){
+		return `You have ${this.meetings - this.meetDone} meetings today`
+	}
+}
+myTodos.addMeeting(4)
+myTodos.doneMeeting(2)
+console.log(myTodos.summary());
+
+</script>
+</body>
+</html>

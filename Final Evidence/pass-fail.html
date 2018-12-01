@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pass Fail | Js Ex-5</title>
+    </head>
+    <body style="font-size:18px">
+
+        <h2>Result including three subject</h2>
+        <script>
+            var html = prompt("Enter HTML Obtained Marks:", "");
+            var ppt = prompt("Enter PPT Obtained Marks:", "");
+            var js = prompt("Enter JavaScript Obtained Marks:", "");
+            //Suppose Pass Mark of Each Subject 70%
+            var pass = "Wow ! You're passed.";
+            var passMsg = "Congratulations !!!";
+            var fail = "Sorry ! You're failed.";
+            var failMsg = "Better Luck Next Time.";
+            if (html >= 70 && js >= 70 && ppt >= 70) {
+                alert(pass);
+                document.writeln(pass + "<br/>" + "<h1>" + passMsg + "</h1>");
+            } else {
+                alert(fail);
+                document.writeln(fail + "<br/>" + "<h1>" + failMsg + "</h1>");
+            }
+        </script>
+    </body>
+</html> 

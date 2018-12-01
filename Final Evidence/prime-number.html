@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Prime Number</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            //First, find a prime number.......................................
+
+            function findPrime(num) {
+                for (var i = 2; i < num; i++) {
+                    if (num % i === 0)
+                        return false;
+                    return num !== 1 && num !== 0;
+                }
+            }
+            alert(findPrime(29));
+
+
+            //Second, print prime numbers if needed...........................
+
+            function printPrime(sn, en) {
+                for (sn; sn < en; sn++) {
+                    if (findPrime(sn)) {
+                        document.write("Prime = " + sn + "<hr/>");
+                    }
+                }
+            }
+            printPrime(1, 50);
+
+
+            //Third, make sum of the prime numbers if asked....................
+
+            function printSum(sn, en) {
+                var sum = 0;
+                for (sn; sn < en; sn++) {
+                    if (findPrime(sn)) {
+                        sum += sn;
+                    }
+                }
+                return sum;
+            }
+            document.write("Sum = " + printSum(1, 100));
+            document.write("<hr/>");
+
+            //Last, count prime numbers........................................
+            function printCount(sn, en) {
+                var count = 0;
+                for (sn; sn < en; sn++) {
+                    if (findPrime(sn)) {
+                        count++;
+                    }
+                }
+                return count;
+            }
+            document.write("Count = " + printCount(1, 1000));
+            document.write("<hr/>");
+        </script>
+    </body>
+</html>

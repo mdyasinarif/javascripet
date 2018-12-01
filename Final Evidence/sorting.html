@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Sorting - Numbers & Alphabetical Lists</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var x = new Array(5, 10, 20, 7, 16, 6, 3, 2, 100,18,29);
+            var lengthOfArray = [x.length];
+            document.write(lengthOfArray);
+            document.write("<hr/>");
+
+            x.sort();
+            x.sort(function (a, b) {
+                return a - b
+            });
+            document.write(x);
+            document.write("<hr/>");
+
+            //Page -43
+            var zoo = new Array("zebras", "lions", "apes", "tigers","cats");
+            zoo.sort();
+            document.write(zoo);
+            document.write("<hr/>");
+        </script>
+    </body>
+</html>
