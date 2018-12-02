@@ -2,20 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Factorial</title>
+<title>sort</title>
 </head>
 
 <body>
 <script>
-
-function printFact(){
-	var n = parseInt(prompt("Enter A Number"));
-	var fact = 1;
-	for (n;n>=1;n--){
-		fact*=n
-		}
-		alert(fact);
-	}printFact();
+var x = new Array (10,3,23,13,18,21,65,5,9);
+x.sort();
+x.sort(function (a,b){
+	return a-b;
+	});
+document.write(x);
+document.write("<br>");
+var y = new Array ("D","B","F","C","E","A");
+document.write(y.sort());
 </script>
 </body>
 </html>

@@ -2,31 +2,27 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>odd and even</title>
+<title>Even Odd</title>
 </head>
 
 <body>
 <script>
 var sn = parseInt(prompt("Enter Strating Number",""));
-var en = parseInt(prompt("Enter ending Number",""));
-function printEven(sn,en){
-	for(sn;sn<=en;sn++){
-		if(sn%2 == 0){
-			document.write("Even :"+sn+"<br>");
+var en = parseInt(prompt("Enter Ending Number",""));
+function PrintEven(sn,en){
+	for(sn;sn<=en; sn++){
+		if(sn%2 == 0 ){
+			document.write(sn+" is Even <br>");
 			}
 		}
-		
-}
-	printEven(sn,en);
+	}PrintEven(sn,en);
 function printOdd(sn,en){
-	for(sn;sn<=en;sn++){
-		if(sn%2 != 0){
-			document.write("Odd :"+sn+"<br>");
-			}
+	for(sn;sn<=en; sn++){
+		if(sn%2 !=0 ){
+			document.write(sn+" is Odd <br>");
 		}
-		
-}
-	printOdd(sn,en);
+		}
+	}printOdd(sn,en);
 </script>
 </body>
 </html>
