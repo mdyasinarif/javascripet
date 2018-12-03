@@ -110,7 +110,7 @@
 					document.getElementById("email").innerHTML = "Email field must not be empty!!!";
 					return false;
 				}else{
-					var emailval =/[a-zA-Z0-9][a-zA-Z0-9_.]*[@][gmail-yahoo]+([.][com])+/;
+					var emailval =/[a-zA-Z0-9][a-zA-Z0-9._]*[@][a-zA-Z]+([.][a-zA-Z]+)+/;
 					if(!emailval.test(email)){
 					document.getElementById("email").innerHTML = "Enter valid email!!!";
 					return false;
