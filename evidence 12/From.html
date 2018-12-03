@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>From</title>
+<style type ="text/css">
+	.mainDiv{
+    	margin-left : 100px;
+        margin_top : 50px;
+    }
+	label {
+		color : red;
+		padding:5px 5px;
+		}
+</style>
+</head>
+
+<body>
+<form name="myForm">
+Full Name :<br />
+	<input  type="text" name="fname"/><label id="fname"></label><br />
+ID :<br />
+	<input  type="number" name="id"/><label id="id"></label><br />
+Education : <br />
+	<input type="checkbox" name="ssc" value="ssc"/>SSC
+    <input type="checkbox" name="hsc" value="hsc"/>HSC<label id="education"><label>
+    <br />
+ <br />
+<input type="reset" />
+</form>
+<button type="submit" onclick="validFron()">Submit</button>
+<button type="submit" onclick="closeWindow()">Close Window</button>
+<script>
+var win;
+function closeWindow(){
+	win.close();
+	}
+function validFron(){
+	var fname = document.myForm.fname.value;
+	if(fname.length<6){
+		document.getElementById("fname").innerHTML = "Full Name Must Be 6 Character";
+		return false;
+		}else{
+			document.getElementById("fname").innerHTML = "";
+			
+			}
+			
+			
+	var id = document.myForm.id.value;
+	if(id.length<6){
+		document.getElementById("id").innerHTML = "Roll Must Be 6 Character";
+		return false;
+		}else{
+			document.getElementById("id").innerHTML = "";
+			
+	
+	var education = "";
+	if(document.myFrom.ssc.checked){
+		education+= document.myForm.ssc.value;
+		}
+	if(document.myFrom.hsc.checked){
+		education+= document.myForm.hsc.value;
+		}
+	if(!document.myFrom.ssc.checked && !document.myFrom.hsc.checked){
+		document.getElementById("education").innerHTML = "Education Must be Clicked";
+		return false;
+		}else{
+			document.getElementById("education").innerHTML = "";
+			win =  window.open("","","Width=400");
+			win.document.write("<h2>Output</h2>");
+			
+			win.document.write("Full Name:" + fname+"<br>");
+			win.document.write("ID:" + id+"<br>");
+			win.document.write("education:" + education+"<br>");
+	}
+			
+}
+}
+</script>
+</body>
+</html>
